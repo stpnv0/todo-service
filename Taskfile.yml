@@ -1,0 +1,32 @@
+version: "3"
+
+tasks:
+  help:
+    desc: "List all tasks"
+    cmds:
+      - task --list
+
+  docker:build:
+    desc: "Build docker image"
+    cmds:
+      - docker compose build
+
+  docker:up:
+    desc: "Start application"
+    cmds:
+      - docker compose up -d
+
+  docker:down:
+    desc: "Stop application"
+    cmds:
+      - docker compose down
+
+  docker:restart:
+    desc: "Restart application"
+    cmds:
+      - docker compose restart app
+
+  logs:
+    desc: "Show application logs"
+    cmds:
+      - docker compose logs -f app
