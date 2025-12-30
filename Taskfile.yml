@@ -30,3 +30,9 @@ tasks:
     desc: "Show application logs"
     cmds:
       - docker compose logs -f app
+
+  test:
+    desc: "Run all Go unit tests"
+    cmds:
+      - go test ./... -v -cover
+    silent: false
