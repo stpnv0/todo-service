@@ -4,7 +4,6 @@
 .vscode/
 bin/
 dist/
-app
 *.exe
 *.out
 *.test
